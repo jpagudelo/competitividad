@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+/*------------------------------------
+   ?GLOBAL
+------------------------------------*/
+:root {
+    font-family: "Chivo", sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+
+
+/*------------------------------------
+   ?HOME
+------------------------------------*/
+.home-header {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.home-h1 {
+    font-size: clamp(30px, 5.5vw, 80px);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.credit {
+    font-size: 14px;
+    color: hsl(0,0%,60%);
+}
+
+.home-topics {
+    list-style: none;
+    padding-left: 0;
+}
+
+.home-topic-link {
+    color: black;
+    font-weight: bold;
+    font-size: clamp(22px, 3vw, 30px);
+    padding: clamp(20px, 2vw, 30px);
+    display: block;
+    transition: all 0.3s;
+}
+
+.home-topic-link:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+/*------------------------------------
+   ?TOPIC
+------------------------------------*/
+.topic-notes {
+    padding: 1rem;
+}
+
+.topic-content {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-rows: repeat(2, 50vh);
+}
+
+.return {
+    background-color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    display: inline-flex;
+    margin-bottom: 10px;
+    border: 2px solid;
+    color: black;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.return:hover {
+    background-color: black;
+    color: white;
+}
